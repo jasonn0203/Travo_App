@@ -1,3 +1,3 @@
 # travo_app
 
-A new Flutter project.
+First project of Flutter
