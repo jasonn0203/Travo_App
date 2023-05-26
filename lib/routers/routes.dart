@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:travo_app/screens/onboarding_screen.dart';
 import 'package:travo_app/screens/splash_screen.dart';
 
 //NOTE - Map là một cấu trúc dữ liệu trong Flutter,
@@ -8,5 +9,8 @@ import 'package:travo_app/screens/splash_screen.dart';
 
 final Map<String, WidgetBuilder> routes = {
   //Splash Screen
-  SplashScreen.routePath: (context) => const SplashScreen()
+  SplashScreen.routePath: (context) => const SplashScreen(),
+
+  //Onboarding Screen
+  OnboardingScreen.routePath: (context) => const OnboardingScreen()
 };

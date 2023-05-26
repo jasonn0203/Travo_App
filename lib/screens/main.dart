@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
 import 'package:travo_app/core/color.dart';
 
 import 'package:travo_app/routers/routes.dart';
@@ -20,6 +21,7 @@ class MainApp extends StatelessWidget {
         theme: ThemeData(
           primaryColor: AppColor.primaryColor,
           scaffoldBackgroundColor: AppColor.mainBackgroundColor,
+          fontFamily: GoogleFonts.rubik().fontFamily,
         ),
         //route config
         routes: routes,
