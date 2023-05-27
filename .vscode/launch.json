@@ -7,7 +7,8 @@
     {
       "name": "travo_app",
       "request": "launch",
-      "type": "dart"
+      "type": "dart",
+      "program": "lib/screens/main.dart"
     },
     {
       "name": "travo_app (profile mode)",

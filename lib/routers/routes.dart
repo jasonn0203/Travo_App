@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:travo_app/screens/home_screen.dart';
 import 'package:travo_app/screens/onboarding_screen.dart';
 import 'package:travo_app/screens/splash_screen.dart';
 
@@ -12,5 +13,8 @@ final Map<String, WidgetBuilder> routes = {
   SplashScreen.routePath: (context) => const SplashScreen(),
 
   //Onboarding Screen
-  OnboardingScreen.routePath: (context) => const OnboardingScreen()
+  OnboardingScreen.routePath: (context) => const OnboardingScreen(),
+
+  //Home Screen
+  HomeScreen.routePath: (context) => const HomeScreen()
 };

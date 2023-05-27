@@ -1,11 +1,16 @@
 import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:travo_app/core/color.dart';
 
 import 'package:travo_app/routers/routes.dart';
 import 'package:travo_app/screens/splash_screen.dart';
 
-void main() {
+void main() async {
+  //Sync color status bar
+  SystemChrome.setSystemUIOverlayStyle(
+      const SystemUiOverlayStyle(statusBarColor: Colors.transparent));
+
   runApp(const MainApp());
 }
 
