@@ -3,7 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:smooth_page_indicator/smooth_page_indicator.dart';
 import 'package:travo_app/core/color.dart';
 import 'package:travo_app/helpers/asset_helper.dart';
-import 'package:travo_app/screens/home_screen.dart';
+import 'package:travo_app/screens/main_screen.dart';
 import 'package:travo_app/widgets/buttons_widget.dart';
 
 class OnboardingScreen extends StatefulWidget {
@@ -17,6 +17,7 @@ class OnboardingScreen extends StatefulWidget {
 
 class _OnboardingScreenState extends State<OnboardingScreen> {
   final PageController _pageController = PageController();
+
   //NOTE - A StreamController is a class that allows you to create a stream. A stream is a sequence of events that can be listened to
   final StreamController<int> _pageStreamController =
       StreamController.broadcast();
@@ -91,10 +92,10 @@ class _OnboardingScreenState extends State<OnboardingScreen> {
                         onTap: () {
                           if (_pageController.page != 2) {
                             _pageController.nextPage(
-                                duration: const Duration(microseconds: 800),
-                                curve: Curves.easeIn);
+                                duration: const Duration(milliseconds: 300),
+                                curve: Curves.decelerate);
                           } else {
-                            Navigator.pushNamed(context, HomeScreen.routePath);
+                            Navigator.pushNamed(context, MainScreen.routePath);
                           }
                         },
                       );

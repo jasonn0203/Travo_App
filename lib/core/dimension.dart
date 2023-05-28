@@ -9,3 +9,6 @@ const double smallPadding = 15.0;
 const BorderRadius defaultRadius = BorderRadius.all(Radius.circular(8));
 const BorderRadius buttonRadius = BorderRadius.all(Radius.circular(25));
 const BorderRadius itemRadius = BorderRadius.all(Radius.circular(20));
+
+//Icon
+const double iconSize = 24.0;

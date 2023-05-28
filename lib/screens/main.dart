@@ -1,15 +1,21 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:hive_flutter/adapters.dart';
 import 'package:travo_app/core/color.dart';
+import 'package:travo_app/helpers/local_storage_helper.dart';
 
 import 'package:travo_app/routers/routes.dart';
 import 'package:travo_app/screens/splash_screen.dart';
 
 void main() async {
-  //Sync color status bar
+  //Sync color status bar to transparent
   SystemChrome.setSystemUIOverlayStyle(
       const SystemUiOverlayStyle(statusBarColor: Colors.transparent));
+
+  //Hive local storage
+  await Hive.initFlutter();
+  await LocalStorageHelper.initLocalStorageHelper();
 
   runApp(const MainApp());
 }
