@@ -6,6 +6,8 @@ class AssetHelper {
   static const String onboarding1 = '$imagesPath/onboarding_1.png';
   static const String onboarding2 = '$imagesPath/onboarding_2.png';
   static const String onboarding3 = '$imagesPath/onboarding_3.png';
+  static const String ovalBottomRight = '$imagesPath/oval_bottom_right.png';
+  static const String ovalTopLeft = '$imagesPath/oval_top_left.png';
 
   //Icons
   static const String iconsPath = 'assets/icons';

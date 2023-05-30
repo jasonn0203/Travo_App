@@ -6,6 +6,7 @@ class AppColor {
   static const Color orangeColor = Color(0xffFE9C5E);
 
   static const Color subtextColor = Color(0xff636363);
+  static const Color whiteColor = Color(0xffFFFFFF);
   static const Color textColor = Color(0xff313131);
   static const Color lightPinkColor = Color(0xffF77777);
   static const Color lightTealColor = Color(0xff3EC8BC);
